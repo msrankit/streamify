@@ -1,0 +1,14 @@
+{
+  "name": "streamify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+"build" : "npm install --prefix backened && npm install --prefix frontened && npm run build --prefix frontened",
+    "start": "npm run start --prefix backened"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
