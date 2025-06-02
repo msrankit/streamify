@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import useAuthUser from "../hooks/useAuthUser.js";
+import useAuthuser from "../hooks/useAuthUser.js";
 import { useQuery } from "@tanstack/react-query";
 import { getStreamToken } from "../libs/api";
 
@@ -27,7 +27,7 @@ const CallPage = () => {
     const [call, setCall] = useState(null);
     const [isConnecting, setIsConnecting] = useState(true);
 
-    const { authUser, isLoading } = useAuthUser();
+    const { authUser, isLoading } = useAuthuser();
 
     const { data: tokenData } = useQuery({
         queryKey: ["streamToken"],
