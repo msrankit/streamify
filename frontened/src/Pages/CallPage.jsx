@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import useAuthuser from "../hooks/useAuthUser.js";
+import useAuthuser from "../hooks/useAuthuser.js";
 import { useQuery } from "@tanstack/react-query";
 import { getStreamToken } from "../libs/api";
 
